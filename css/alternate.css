@@ -62,7 +62,7 @@ a:visited {
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: var(--accent-color-alt);
 }
 
 nav ul li {
