@@ -85,6 +85,10 @@ nav ul li a:visited {
     color: var(--accent-color);
 }
 
+nav ul li a:hover {
+    color: var(--accent-color-alt);
+}
+
 table {
     width: 100%;
 }
