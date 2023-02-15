@@ -1,0 +1,196 @@
+/* Import the Roboto Condensed and Roboto Mono fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap');
+
+/* Define global variables. */
+:root {
+    /* Define the global color palette. */
+    --accent-color: #0096ff;
+    --accent-color-alt: #004a7e;
+    --text-color: #222;
+    --background-color: #eee;
+
+    /* Define the global spacing. */
+    --common-spacing: 25px;
+}
+
+/* Define animations. */
+@keyframes slideIn {
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+/* Enable smooth scrolling.*/
+html {
+	scroll-behavior: smooth;
+    scroll-padding-top: 85px; 
+}
+
+/* Define global tag and class styles. */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    margin: 0;
+    margin-top: 85px;
+    background: var(--background-color);
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(0, 74, 126);
+}
+
+h2 {
+    font-size: 26px;
+    color: rgb(0, 74, 126);
+}
+
+h3 {
+    font-size: 22px;
+    color: rgb(0, 74, 126);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--accent-color-alt);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 0 5px 15px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+
+nav ul li a:visited {
+    color: var(--accent-color);
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    text-align: left;
+    border: 1px solid var(--accent-color-alt);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+button, .button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 8px;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+button:hover, .button:hover {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    padding: var(--common-spacing) 10%;
+}
+
+.wrapper {
+    padding: var(--common-spacing) 0;
+}
+
+.poster {
+    width: 300px;
+    height: auto;
+    border-radius: 25px;
+    transition: all 0.5s ease-out;
+}
+
+/* Define ID specific styles. */
+
+#header {
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 5px 10%;
+    background: rgb(34, 34, 34);
+}
+
+#logo {
+    width: auto;
+    height: 60px;
+}
+
+#movies .wrapper {
+    display: flex;
+    overflow-x: scroll;
+}
+
+#movies .movie {
+    display: inline-block;
+    width: 100%;
+}
+
+#movies .poster:hover {
+    transform: rotate(5deg);
+    margin: auto;
+}
+
+#dataset .wrapper {
+    overflow-x: auto;
+}
+
+#about {
+    color: var(--text-color-dark);
+    background-color: var(--section-color-light);
+}
+
+#footer {
+    font-size: 14px;
+    color: white;
+    background: #222;
+}
+
+/* Movie Details Page*/
+
+.mpaa-rating {
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px 4px 0;
+    color:var(--accent-color-alt);
+    border: 2px solid var(--accent-color-alt);
+}
+
+/* Disable motion if preferred in supported browsers. */
+@media (prefers-reduced-motion) {
+	html {
+		scroll-behavior: auto;
+	}
+}
