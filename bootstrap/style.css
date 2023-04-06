@@ -1,0 +1,50 @@
+/* Import the Montserrat and Fira Code fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Define global variables. */
+:root {
+    /* Define the global color palette. */
+    --accent-color: rgb(118, 185, 0);
+    --accent-color-alt: rgb(200, 255, 145);
+    --text-color-dark: rgb(34, 34, 34);
+    --text-color-light: rgb(255, 255, 255);
+    --section-color-dark: rgba(0, 0, 0, 0.5);
+    --section-color-light: rgba(255, 255, 255, 0.8);
+    --background-color: linear-gradient(-20deg, rgb(43, 88, 118) 0%, rgb(78, 67, 118) 100%) fixed;
+}
+
+/* Define global tag and class styles. */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color-light);
+    background: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background: var(--section-color-dark);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--accent-color-alt);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+
+nav ul li a:visited {
+    color: var(--accent-color);
+}

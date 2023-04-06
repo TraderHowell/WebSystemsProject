@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trader Howell Home Theatre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand g-1" href="index.html"><img id="logo" src="img/logo.svg" alt="Trader Howell Home Theatre" height="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Movies</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Raiders of the Lost Ark (1981)</a></li>
+                            <li><a class="dropdown-item" href="#">Romancing the Stone (1984)</a></li>
+                            <li><a class="dropdown-item" href="#">Jurassic Park (1993)</a></li>
+                            <li><a class="dropdown-item" href="#">Twister (1996)</a></li>
+                            <li><a class="dropdown-item" href="#">The Mummy (1999)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dataset</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+    </header>
+
+    <section id="movies">
+        <div id="carouselIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/raiders-backdrop.webp" class="d-block w-100 img-gradient" alt="Raiders of the Lost Ark (1981)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Raiders of the Lost Ark (1981)</h2>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/romancing-backdrop.webp" class="d-block w-100" alt="Romancing the Stone (1984)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Romancing the Stone (1984)</h2>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/jurassic-backdrop.webp" class="d-block w-100" alt="Jurassic Park (1993)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Jurassic Park (1993)</h2>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/twister-backdrop.webp" class="d-block w-100" alt="Twister (1996)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Twister (1996)</h2>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/mummy-backdrop.webp" class="d-block w-100" alt="The Mummy (1999)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>The Mummy (1999)</h2>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <section id="dataset" class="container-fluid">
+        <h2>Current Movie Dataset</h2>
+        <p>A Table of Current and Upcoming Movies</p>
+        <div class="table-responsive">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Movie Name</th>
+                        <th scope="col">MPAA Rating</th>
+                        <th scope="col">Release Date</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col">Runtime</th>
+                        <th scope="col">Director</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Raiders of the Lost Ark</td>
+                        <td>PG</td>
+                        <td>06/12/1981 (US)</td>
+                        <td>Adventure, Action</td>
+                        <td>1h 55m</td>
+                        <td>Steven Spielberg</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Romancing the Stone</td>
+                        <td>PG</td>
+                        <td>03/30/1984 (US)</td>
+                        <td>Adventure, Action, Romance, Comedy</td>
+                        <td>1h 46m</td>
+                        <td>Robert Zemeckis</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Jurassic Park</td>
+                        <td>PG-13</td>
+                        <td>06/11/1993 (US)</td>
+                        <td>Adventure, Science Fiction</td>
+                        <td>2h 7m</td>
+                        <td>Steven Spielberg</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Twister</td>
+                        <td>PG-13</td>
+                        <td>05/10/1996 (US)</td>
+                        <td>Action, Adventure, Drama</td>
+                        <td>1h 53m</td>
+                        <td>Jan de Bont</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">The Mummy</td>
+                        <td>PG-13</td>
+                        <td>05/07/1999 (US)</td>
+                        <td>Adventure, Action, Fantasy</td>
+                        <td>2h 4m</td>
+                        <td>Stephen Sommers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+
+    </section>
+
+    <footer id="footer" class="section">
+        <div class="container">
+            <p>Movie posters, backdrops, and information courtesy of <a href="https://www.themoviedb.org/" title="Visit The Movie Database (TMDB)" target="_blank">The Movie Database (TMDB)</a>.
+            <br>Copyright &copy; 2023 <a href="https://traderhowell.com/" title="Visit Brendan Howell's Website" target="_blank">Brendan Howell</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
